@@ -1,2 +1,2 @@
 # FlaskIntro
-trying out flask https://flaskintro15.herokuapp.com/
+trying out flask https://flaskintro-production.up.railway.app/
