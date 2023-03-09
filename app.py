@@ -2,9 +2,8 @@ import os
 from flask import Flask, redirect, render_template, request, request, redirect
 from flask_sqlalchemy import  SQLAlchemy
 from datetime import datetime
-from flask_mysqldb import MySQL
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI']=os.getenv('MYSQL_URL')
+app.config['SQLALCHEMY_DATABASE_URI']=os.getenv('DATABASE_URL')
 db=SQLAlchemy(app)
 
 class Todo(db.Model):
